@@ -1,0 +1,4 @@
+SendSMS.MainActivity, SendSMS;md560870c628920cd01a011d11ec18b18bd.MainActivity
+SendSMS.MainActivity, SendSMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md560870c628920cd01a011d11ec18b18bd.MainActivity
+SendSMS.MainActivity;md560870c628920cd01a011d11ec18b18bd.MainActivity
+sendsms.MainActivity;md560870c628920cd01a011d11ec18b18bd.MainActivity
