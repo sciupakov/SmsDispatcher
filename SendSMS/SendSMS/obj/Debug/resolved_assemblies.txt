@@ -1,26 +1,26 @@
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\SendSMS.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\Java.Interop.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\Mono.Android.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\mscorlib.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Core.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Data.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Xml.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Threading.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Collections.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Collections.Concurrent.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Reflection.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Diagnostics.Debug.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Linq.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.InteropServices.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.Extensions.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Reflection.Extensions.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Net.Http.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.Serialization.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.ServiceModel.Internals.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Numerics.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.Transactions.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\Mono.Data.Tds.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\Mono.Security.dll
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\SendSMS.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Java.Interop.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Mono.Android.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\mscorlib.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Core.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Data.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Xml.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Threading.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Collections.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Collections.Concurrent.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Reflection.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Diagnostics.Debug.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Linq.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.InteropServices.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.Extensions.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Reflection.Extensions.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Net.Http.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.Serialization.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Numerics.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Transactions.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Mono.Data.Tds.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Mono.Security.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.ComponentModel.Composition.dll

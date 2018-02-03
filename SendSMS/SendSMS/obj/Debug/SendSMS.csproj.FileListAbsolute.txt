@@ -14,8 +14,24 @@ C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debu
 C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\uploadflags.txt
 C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\bin\Debug\SendSMS.dll.mdb
 C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\obj\Debug\android\assets\SendSMS.dll.mdb
-C:\Users\AndrejSc\Documents\Visual Studio 2017\Projects\SendSMS\SendSMS\bin\Debug\SendSMS.dll
-bin\Debug\Mono.Android.pdb
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\SendSMS.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\SendSMS.pdb
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\SendSMS.SendSMS.apk
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\SendSMS.SendSMS-Signed.apk
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\SendSMS.csprojResolveAssemblyReference.cache
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\SendSMS.csproj.CoreCompileInputs.cache
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\SendSMS.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\SendSMS.pdb
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\bin\SendSMS.SendSMS.apk
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\res\layout\main.xml
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\res\values\strings.xml
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\res\drawable\icon.png
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\R.cs.flag
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\uploadflags.txt
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\SendSMS.dll.mdb
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\SendSMS.dll.mdb
+obj\Debug\linksrc\Mono.Android.pdb
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\SendSMS.dll
 bin\Debug\mscorlib.pdb
 bin\Debug\System.Core.pdb
 bin\Debug\System.Data.pdb
@@ -30,7 +46,6 @@ bin\Debug\Mono.Data.Tds.pdb
 bin\Debug\Mono.Security.pdb
 bin\Debug\System.ComponentModel.Composition.pdb
 obj\Debug\linksrc\SendSMS.dll.mdb
-obj\Debug\linksrc\Mono.Android.pdb
 obj\Debug\linksrc\mscorlib.pdb
 obj\Debug\linksrc\System.Core.pdb
 obj\Debug\linksrc\System.Data.pdb
