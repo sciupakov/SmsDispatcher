@@ -18,4 +18,4 @@ AndroidUseLatestPlatformSdk=false
 TargetFrameworkVersion=v5.0
 AndroidCreatePackagePerAbi=
 OS=Windows_NT
-DesignTimeBuild=
+DesignTimeBuild=true

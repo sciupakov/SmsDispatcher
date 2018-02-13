@@ -17,6 +17,10 @@ namespace SendSMS
         Button btnLoad;
         TextView txtData;
         List<Recipient> SmsRecievers;
+
+        const string SENT_SMS = "SENT_SMS";
+
+        Intent SentIntent = new Intent(SENT_SMS);
         //EditText edtxtNumber;
         //EditText edtxtText;
 
@@ -80,9 +84,10 @@ namespace SendSMS
 
         public void SendAndUpdate(List<Recipient> lst)
         {
+            PendingIntent sentPI = PendingIntent.GetBroadcast(this, 100, SentIntent, 0);
             foreach (var item in lst)
             {
-                PendingIntent sentPI = PendingIntent.GetBroadcast(this, 100, new Intent(this, typeof(SMSBroadcast)), 0);
+                
                 SmsManager.Default.SendTextMessage(item.Number, null, item.Text, sentPI, null);
                 sentPI.
             }
