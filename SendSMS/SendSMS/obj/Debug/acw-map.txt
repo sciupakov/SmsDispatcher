@@ -2,3 +2,11 @@ SendSMS.MainActivity, SendSMS;md560870c628920cd01a011d11ec18b18bd.MainActivity
 SendSMS.MainActivity, SendSMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md560870c628920cd01a011d11ec18b18bd.MainActivity
 SendSMS.MainActivity;md560870c628920cd01a011d11ec18b18bd.MainActivity
 sendsms.MainActivity;md560870c628920cd01a011d11ec18b18bd.MainActivity
+SendSMS.SMSDeliveredReceiver, SendSMS;md560870c628920cd01a011d11ec18b18bd.SMSDeliveredReceiver
+SendSMS.SMSDeliveredReceiver, SendSMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md560870c628920cd01a011d11ec18b18bd.SMSDeliveredReceiver
+SendSMS.SMSDeliveredReceiver;md560870c628920cd01a011d11ec18b18bd.SMSDeliveredReceiver
+sendsms.SMSDeliveredReceiver;md560870c628920cd01a011d11ec18b18bd.SMSDeliveredReceiver
+SendSMS.SMSSentReceiver, SendSMS;md560870c628920cd01a011d11ec18b18bd.SMSSentReceiver
+SendSMS.SMSSentReceiver, SendSMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md560870c628920cd01a011d11ec18b18bd.SMSSentReceiver
+SendSMS.SMSSentReceiver;md560870c628920cd01a011d11ec18b18bd.SMSSentReceiver
+sendsms.SMSSentReceiver;md560870c628920cd01a011d11ec18b18bd.SMSSentReceiver

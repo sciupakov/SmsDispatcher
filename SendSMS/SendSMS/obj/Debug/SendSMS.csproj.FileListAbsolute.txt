@@ -30,8 +30,12 @@ D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\R.cs.flag
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\uploadflags.txt
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\SendSMS.dll.mdb
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\SendSMS.dll.mdb
-obj\Debug\linksrc\Mono.Android.pdb
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\Syncfusion.Compression.Portable.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\Syncfusion.XlsIO.Portable.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\Syncfusion.Compression.Portable.xml
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\Syncfusion.XlsIO.Portable.xml
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\bin\Debug\SendSMS.dll
+bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb
 bin\Debug\System.Core.pdb
 bin\Debug\System.Data.pdb
@@ -40,12 +44,14 @@ bin\Debug\System.Xml.pdb
 bin\Debug\System.Net.Http.pdb
 bin\Debug\System.Runtime.Serialization.pdb
 bin\Debug\System.ServiceModel.Internals.pdb
+bin\Debug\Microsoft.CSharp.pdb
 bin\Debug\System.Numerics.pdb
 bin\Debug\System.Transactions.pdb
 bin\Debug\Mono.Data.Tds.pdb
 bin\Debug\Mono.Security.pdb
 bin\Debug\System.ComponentModel.Composition.pdb
 obj\Debug\linksrc\SendSMS.dll.mdb
+obj\Debug\linksrc\Mono.Android.pdb
 obj\Debug\linksrc\mscorlib.pdb
 obj\Debug\linksrc\System.Core.pdb
 obj\Debug\linksrc\System.Data.pdb
@@ -54,6 +60,7 @@ obj\Debug\linksrc\System.Xml.pdb
 obj\Debug\linksrc\System.Net.Http.pdb
 obj\Debug\linksrc\System.Runtime.Serialization.pdb
 obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+obj\Debug\linksrc\Microsoft.CSharp.pdb
 obj\Debug\linksrc\System.Numerics.pdb
 obj\Debug\linksrc\System.Transactions.pdb
 obj\Debug\linksrc\Mono.Data.Tds.pdb

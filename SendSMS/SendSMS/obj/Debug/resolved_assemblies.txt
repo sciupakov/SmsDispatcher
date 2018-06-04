@@ -2,6 +2,8 @@ D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\SendSMS.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Java.Interop.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Mono.Android.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\mscorlib.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Syncfusion.Compression.Portable.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Syncfusion.XlsIO.Portable.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Core.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Data.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.dll
@@ -19,6 +21,17 @@ D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Reflection.
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Net.Http.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Runtime.Serialization.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.IO.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Text.Encoding.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Text.RegularExpressions.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Reflection.Primitives.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Globalization.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Dynamic.Runtime.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Microsoft.CSharp.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Numerics.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\System.Transactions.dll
 D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Debug\android\assets\Mono.Data.Tds.dll

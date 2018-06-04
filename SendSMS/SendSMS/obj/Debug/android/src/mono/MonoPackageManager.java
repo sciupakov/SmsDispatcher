@@ -107,6 +107,8 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "SendSMS.dll" comes first in this list. */
 		"SendSMS.dll",
+		"Syncfusion.Compression.Portable.dll",
+		"Syncfusion.XlsIO.Portable.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:p1="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v21</xs:documentation>
-    <xs:documentation>2/2/2018 8:55:36 PM</xs:documentation>
+    <xs:documentation>6/4/2018 2:28:53 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16178,8 +16178,12 @@
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/timePicker1" />
             <xs:enumeration value="@id/btnLoad" />
+            <xs:enumeration value="@id/btnSend" />
+            <xs:enumeration value="@id/lblInfo" />
             <xs:enumeration value="@id/linearLayout1" />
-            <xs:enumeration value="@id/txtData" />
+            <xs:enumeration value="@id/linearLayout2" />
+            <xs:enumeration value="@id/txtFilename" />
+            <xs:enumeration value="@id/txtNumberClmn" />
             <xs:enumeration value="@android:id/addToDictionary" />
             <xs:enumeration value="@android:id/background" />
             <xs:enumeration value="@android:id/button1" />
