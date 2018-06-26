@@ -1,0 +1,12 @@
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\SendSMS.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\Java.Interop.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\Mono.Android.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\mscorlib.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\Syncfusion.Compression.Portable.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\Syncfusion.XlsIO.Portable.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\System.Core.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\System.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\System.Xml.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\System.Runtime.Serialization.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\Microsoft.CSharp.dll
+D:\GIT\SMSDispatcher\SendSMS\SendSMS\obj\Release\android\assets\Mono.Security.dll

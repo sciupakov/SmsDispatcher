@@ -18,9 +18,11 @@ namespace SendSMS
     {
         public override void OnReceive(Context context, Intent intent)
         {
+            
             switch ((int)ResultCode)
             {
                 case (int)Result.Ok:
+                    MainActivity.isRecieved = false;
                     Toast.MakeText(Application.Context, "SMS has been sent", ToastLength.Short).Show();
                     break;
                 case (int)SmsResultError.GenericFailure:
@@ -34,6 +36,9 @@ namespace SendSMS
                     break;
                 case (int)SmsResultError.RadioOff:
                     Toast.MakeText(Application.Context, "Radio Off", ToastLength.Short).Show();
+                    break;
+                default:
+                    Toast.MakeText(Application.Context, $"Result code: {ResultCode.ToString()}", ToastLength.Short).Show();
                     break;
             }
         }

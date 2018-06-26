@@ -21,11 +21,13 @@ namespace SendSMS
             {
                 case (int)Result.Ok:
                     Toast.MakeText(Application.Context, "SMS Delivered", ToastLength.Short).Show();
+                    MainActivity.isRecieved = true;
                     break;
                 case (int)Result.Canceled:
                     Toast.MakeText(Application.Context, "SMS not delivered", ToastLength.Short).Show();
                     break;
             }
+            
         }
     }
 }

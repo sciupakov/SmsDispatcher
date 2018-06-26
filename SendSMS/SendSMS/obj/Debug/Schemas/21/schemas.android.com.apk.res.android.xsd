@@ -2,7 +2,7 @@
 <xs:schema xmlns:p1="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v21</xs:documentation>
-    <xs:documentation>6/4/2018 2:28:53 PM</xs:documentation>
+    <xs:documentation>6/24/2018 10:08:29 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16179,9 +16179,15 @@
             <xs:enumeration value="@+id/timePicker1" />
             <xs:enumeration value="@id/btnLoad" />
             <xs:enumeration value="@id/btnSend" />
+            <xs:enumeration value="@id/button1" />
+            <xs:enumeration value="@id/button2" />
+            <xs:enumeration value="@id/button3" />
             <xs:enumeration value="@id/lblInfo" />
             <xs:enumeration value="@id/linearLayout1" />
             <xs:enumeration value="@id/linearLayout2" />
+            <xs:enumeration value="@id/linearLayout3" />
+            <xs:enumeration value="@id/multiAutoCompleteTextView1" />
+            <xs:enumeration value="@id/textView1" />
             <xs:enumeration value="@id/txtFilename" />
             <xs:enumeration value="@id/txtNumberClmn" />
             <xs:enumeration value="@android:id/addToDictionary" />

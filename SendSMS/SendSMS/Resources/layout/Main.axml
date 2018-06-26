@@ -9,40 +9,88 @@
         p1:layout_width="match_parent"
         p1:layout_height="55.5dp"
         p1:id="@+id/linearLayout2"
-        p1:layout_marginBottom="0.0dp">
+        p1:layout_marginBottom="0.0dp"
+        p1:layout_gravity="center_vertical">
         <EditText
-            p1:layout_width="294.5dp"
+            p1:layout_width="127.0dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/txtNumberClmn"
+            p1:hint="Column letter"
+            p1:text="1"
+            p1:layout_marginLeft="0.0dp"
+            p1:layout_marginRight="30.0dp" />
+        <EditText
+            p1:layout_width="205.0dp"
             p1:layout_height="match_parent"
             p1:id="@+id/txtFilename"
             p1:hint="Xlsx file name"
             p1:layout_marginRight="0.0dp"
             p1:text="numbers.xlsx" />
-        <EditText
-            p1:layout_width="match_parent"
-            p1:layout_height="match_parent"
-            p1:id="@+id/txtNumberClmn"
-            p1:hint="Column letter"
-            p1:text="1" />
     </LinearLayout>
-    <Button
-        p1:text="Load data"
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/btnLoad"
-        p1:textColor="@android:color/holo_green_dark"
-        p1:textSize="60dp"
-        p1:layout_marginTop="0.0dp" />
-    <Button
-        p1:text="Send SMS"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/btnSend"
-        p1:textColor="@android:color/holo_red_dark"
-        p1:textSize="60dp"
-        p1:clickable="false" />
+        p1:id="@+id/linearLayout4">
+        <EditText
+            p1:layout_width="127.0dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/txtLines"
+            p1:layout_marginLeft="0.0dp"
+            p1:layout_marginRight="30.0dp" />
+        <Button
+            p1:text="Load data"
+            p1:id="@+id/btnLoad"
+            p1:textSize="30dp"
+            p1:clickable="true"
+            p1:layout_width="205.0dp"
+            p1:layout_height="match_parent"
+            p1:layout_marginRight="0.0dp" />
+    </LinearLayout>
     <TextView
-        p1:text="Text"
+        p1:text="Sms text:"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/lblInfo" />
+        p1:id="@+id/textView1"
+        p1:elegantTextHeight="true" />
+    <MultiAutoCompleteTextView
+        p1:layout_width="match_parent"
+        p1:layout_height="248.5dp"
+        p1:id="@+id/txtText"
+        p1:text="Test message" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="58.0dp"
+        p1:id="@+id/linearLayout3">
+        <Button
+            p1:text="Approve"
+            p1:layout_width="110.0dp"
+            p1:layout_height="45.0dp"
+            p1:id="@+id/btnApprove"
+            p1:layout_marginLeft="0.0dp"
+            p1:layout_gravity="center_vertical" />
+        <Button
+            p1:text="Send"
+            p1:layout_width="138.0dp"
+            p1:layout_height="61.5dp"
+            p1:id="@+id/btnSend"
+            p1:layout_marginTop="0.0dp"
+            p1:layout_marginLeft="0.0dp"
+            p1:layout_marginRight="0.0dp"
+            p1:textSize="20dp" />
+        <Button
+            p1:text="Stop"
+            p1:layout_width="110.0dp"
+            p1:layout_height="45.0dp"
+            p1:id="@+id/btnStop"
+            p1:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <TextView
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/lblInfo"
+        p1:scrollbars="vertical" />
 </LinearLayout>

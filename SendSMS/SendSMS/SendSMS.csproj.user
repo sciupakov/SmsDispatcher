@@ -3,6 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>HUAWEI PLK-L01</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86_Nougat</DefaultDevice>
-    <AndroidDesignerPreferredDevice>Nexus 7 2013</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>Galaxy Nexus</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

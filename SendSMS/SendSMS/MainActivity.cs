@@ -25,19 +25,21 @@ namespace SendSMS
     {
         Button loadDataButton;
         Button sendSmsButton;
+        Button stopDispatchButton;
+        Button approveButton;
+
+        EditText txtLineCount;
         EditText txtFileName;
         EditText txtColumnNumber;
+        EditText txtText;
+
         TextView lblInfo;
         List<string> SmsRecievers;
+        string message;        
 
         private static readonly Regex ifExcelFile = new Regex(@"^.*\.(XLS|xls|XLSX|xlsx)$");
         private static readonly Regex everythingButN = new Regex(@"\D+");
-
-        //const string SENT_SMS = "SENT_SMS";
-        //Intent SentIntent = new Intent(SENT_SMS);
-        //EditText edtxtNumber;
-        //EditText edtxtText;
-
+        public static bool isRecieved = false;
 
 /*
          public async Task<List<Recipient>> Download(string connString)
@@ -72,47 +74,14 @@ namespace SendSMS
                  btnLoad.Enabled = true;
                  return recievers;
              }
-         }
-
-         public void SendAndUpdate(List<Recipient> lst)
-         {
-             PendingIntent sentPI = PendingIntent.GetBroadcast(this, 100, SentIntent, 0);
-             foreach (var item in lst)
-             {
-
-                 SmsManager.Default.SendTextMessage(item.Number, null, item.Text, sentPI, null);
-                 sentPI.
-             }
-         }
-         protected override void OnCreatea(Bundle savedInstanceState)
-         {
-             base.OnCreate(savedInstanceState);
-
-             // Set our view from the "main" layout resource
-             SetContentView(Resource.Layout.Main);
-
-             SmsRecievers = new List<Recipient>();
-
-             btnLoad = FindViewById<Button>(Resource.Id.btnLoad);
-             txtData = FindViewById<TextView>(Resource.Id.txtData);
-
-             var connString = "Server=tcp:wew7wzaijn.database.windows.net,1433;Database=booklocalservice;User ID=blsuser@wew7wzaijn;Password=YQfm5I1ZgPx3GkS;";
-
-             btnLoad.Click += async delegate
-             {
-                 Task<List<Recipient>> loadListTask = Download(connString);
-                 await loadListTask;
-             };
-
-
-
          }*/
 
 
-        string message = "Test message here";
+
 
         private SmsManager _smsManager;
         private BroadcastReceiver _smsSentBroadcastReceiver, _smsDeliveredBroadcastReceiver;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -120,11 +89,16 @@ namespace SendSMS
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.Main);
             
-
             SmsRecievers = new List<string>();
 
             loadDataButton = FindViewById(Resource.Id.btnLoad) as Button;
             sendSmsButton = FindViewById(Resource.Id.btnSend) as Button;
+            stopDispatchButton = FindViewById(Resource.Id.btnStop) as Button;
+            approveButton = FindViewById(Resource.Id.btnApprove) as Button;
+
+            txtText = FindViewById(Resource.Id.txtText) as EditText;
+            txtLineCount = FindViewById(Resource.Id.txtLines) as EditText;
+            txtColumnNumber = FindViewById(Resource.Id.txtLines) as EditText;
             txtFileName = FindViewById(Resource.Id.txtFilename) as EditText;
             txtColumnNumber = FindViewById(Resource.Id.txtNumberClmn) as EditText;
             lblInfo = FindViewById(Resource.Id.lblInfo) as TextView;
@@ -134,104 +108,93 @@ namespace SendSMS
             txtColumnNumber.TextChanged += TxtColumnNumber_TextChanged;
             sendSmsButton.Click += SendSmsButton_Click;
             loadDataButton.Click += LoadDataButton_Click;
-
+            stopDispatchButton.Click += StopDispatchButton_Click;
+            approveButton.Click += ApproveButton_Click;
 
             _smsManager = SmsManager.Default;
+        }
 
+        private void ApproveButton_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void StopDispatchButton_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         public static string ReplaceEButN(string input, string replacement)
         {
-            return "+"+everythingButN.Replace(input, replacement);
+            Console.WriteLine("----Characters replaced----");
+            return everythingButN.Replace(input, replacement);
         }
 
         private void LoadDataButton_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            loadDataButton.Clickable = false;
+            try
+            {
                 string filename = txtFileName.Text;
-                ushort columnNr;
-                if(!UInt16.TryParse(txtColumnNumber.Text, out columnNr))
+                if (!UInt16.TryParse(txtColumnNumber.Text, out ushort columnNr))
                 {
-                    lblInfo.Text = "Invalid column number";
+                    lblInfo.Text += "Invalid column number\n";
                     return;
                 }
                 if (!ifExcelFile.IsMatch(filename))
                 {
-                    lblInfo.Text = filename+" is not an Excel document (maybe it lacks .xlsx extension?)";
+                    lblInfo.Text += filename + " is not an Excel document (maybe it lacks .xlsx extension?)\n";
                     return;
                 }
                 SmsRecievers = LoadNumbers(filename, columnNr);
                 if (SmsRecievers.Count > 0)
                 {
-                    lblInfo.Text = "Data loaded succesfully";
+                    lblInfo.Text += "Data loaded succesfully\n";
                     sendSmsButton.Clickable = true;
                 }
                 else
                 {
-                    lblInfo.Text = "Cannot load the data";
+                    lblInfo.Text += "Cannot load the data\n";
+                    return;
                 }
 
-            //}
-            //catch (Exception ex)
-            //{
-
-                //throw ex;
-                //lblInfo.Text = "Catchen an exception: " + ex.Message;
-            //}
-
-
-
-           /* string content = "Jason rules";
-            string filename = "file.txt";
-
-            var documents = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
-            if (!Directory.Exists(documents))
-            {
-                Console.WriteLine("Directory does not exist.");
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("Directory exists.");
-
-                File.WriteAllText(documents + @"/" + filename, content);
-
-                if (!File.Exists(documents + @"/" + filename))
-                {
-                    Console.WriteLine("Document not found.");
-                }
-                else
-                {
-                    string newContent = File.ReadAllText(documents + @"/" + filename);
-
-                    //TextView viewer = FindViewById<TextView>(Resource.Id.textView1);
-                    if (lblInfo != null)
-                    {
-                        lblInfo.Text = newContent;
-                    }
-                }
-            }*/
+                lblInfo.Text += "Catched an exception: " + ex.Message + "\n";
+            }
 
 
+            loadDataButton.Clickable = true;
         }
 
         private void SendSmsButton_Click(object sender, EventArgs e)
         {
-            //var phone = phoneNumberEditText.Text;
-            //var message = messageEditText.Text;
             if (!(SmsRecievers.Count > 0))
             {
-                lblInfo.Text = "Unable to send messages: no numbers loaded";
+                lblInfo.Text += "Unable to send messages: no numbers loaded\n";
                 return;
             }
-
+            if(txtText.Text != "")
+            {
+                message = txtText.Text;
+            }
+            else
+            {
+                lblInfo.Text += "Please enter message text\n";
+            }
+            Console.WriteLine("Numbers are: ");
+            foreach (var item in SmsRecievers)
+            {
+                Console.WriteLine(item);
+            }
 
             var piSent = PendingIntent.GetBroadcast(this, 0, new Intent("SMS_SENT"), 0);
             var piDelivered = PendingIntent.GetBroadcast(this, 0, new Intent("SMS_DELIVERED"), 0);
 
-
             foreach (var item in SmsRecievers)
             {
+                Console.WriteLine($"Sending sms to the number {item}");
                 _smsManager.SendTextMessage(item, null, message, piSent, piDelivered);
             }
         }
@@ -249,15 +212,15 @@ namespace SendSMS
 
         private List<string> LoadNumbers(string filename, ushort clmnNumber)
         {
-            
+            Console.WriteLine("=========Load ");
             var numbers = new List<string>();
 
             //Creates a new instance for ExcelEngine.
             ExcelEngine excelEngine = new ExcelEngine();
 
 
-            var pathFile = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads);
-            var absolutePath = pathFile.AbsolutePath;
+            //var pathFile = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads);
+            //var absolutePath = pathFile.AbsolutePath;
 
             var pth = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).ToString();
 
@@ -266,70 +229,43 @@ namespace SendSMS
             var filePath = global::Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
             //var filePath = "/storage/emulated/0/Download";
             var path = Path.Combine(pth, filename);
-            Console.WriteLine("=============Trynig to load data: path - "+path+" column number: "+clmnNumber+" ===============\n");
-
-
-
-            var fs = System.IO.File.Open(path, System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.ReadWrite, System.IO.FileShare.None);
-
-
+            Console.WriteLine("=============Trynig to load data: path - " + path + " column number: " + clmnNumber + " ===============\n");
 
             //Loads or open an existing workbook through Open method of IWorkbooks
             try
             {
-                Console.WriteLine("------------- inside try-catch ---------------\n");
-                IWorkbook workbook = excelEngine.Excel.Workbooks.Open(fs);
-                Console.WriteLine("Path to file is: " + path);
-                IWorksheet sheet = workbook.Worksheets[0];
-                string num;
-                for (int i = 1; i < 10000; i++)
+                using (var fs = System.IO.File.Open(path, System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.ReadWrite, System.IO.FileShare.None))
                 {
-                    //replace everything but numbers
-                    num = ReplaceEButN(sheet.GetText(i, clmnNumber), "");
-                    if (num != "")
+                    Console.WriteLine("------------- inside try-catch ---------------\n");
+                    IWorkbook workbook = excelEngine.Excel.Workbooks.Open(fs);
+                    Console.WriteLine("Path to file is: " + path);
+                    IWorksheet sheet = workbook.Worksheets[0];
+                    string num;
+                    for (int i = 1; i < 10; i++)
                     {
-                        numbers.Add(num);
+                        //replace everything but numbers
+                        if (sheet.GetText(i, clmnNumber) == null)
+                        {
+                            Console.WriteLine($"Cell {i} is empty");
+                            continue;
+                        }
+                        num = ReplaceEButN(sheet.GetText(i, clmnNumber), "");
+                        if (num != "")
+                        {
+                            numbers.Add(num);
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
-                lblInfo.Text = "Unable to load data. Message: " + ex.Message;
+                lblInfo.Text += "Unable to load data. Message: " + ex.Message + "\n";
+
             }
-            
-            
-     
+
 
             return numbers;
         }
-
-
-        private void CheckAppPermissions()
-        {
-            /*var thisActivity = Forms.Context as Activity;
-            ActivityCompat.RequestPermissions(thisActivity, new string[] {
-Manifest.Permission.AccessFineLocation }, 1);
-            ActivityCompat.RequestPermissions(thisActivity,
-            new String[] { Manifest.Permission.AccessFineLocation },
-            1);*/
-
-            Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads);
-
-            /*if ((int)Build.VERSION.SdkInt < 23)
-            {
-                return;
-            }
-            else
-            {
-                if (PackageManager.CheckPermission(Manifest.Permission.ReadExternalStorage, PackageName) != Permission.Granted
-                    && PackageManager.CheckPermission(Manifest.Permission.WriteExternalStorage, PackageName) != Permission.Granted)
-                {
-                    var permissions = new string[] { Manifest.Permission.ReadExternalStorage, Manifest.Permission.WriteExternalStorage };
-                    RequestPermissions(permissions, 1);
-                }
-            }*/
-        }
-
 
         protected override void OnResume()
         {
@@ -352,26 +288,6 @@ Manifest.Permission.AccessFineLocation }, 1);
 
 
     }
-
-
-    /*[BroadcastReceiver]
-    public class SMSBroadcast : BroadcastReceiver
-    {
-        public override void OnReceive(Context context, Intent intent)
-        {
-            switch (this.ResultCode)
-            {
-                case Result.Ok:
-                    Console.Write("==========SMS SENT!!!==================");
-                    
-                    break;
-            }
-            if (ResultCode == (Result)SmsResultError.GenericFailure)
-            {
-                Console.WriteLine("senging failed");
-            }
-        }
-    }*/
 
 }
 

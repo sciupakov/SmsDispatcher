@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SendSMS.SendSMS" android:versionCode="1" android:versionName="1.0" android:installLocation="internalOnly">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+  <uses-permission android:name="android.permission.SEND_SMS" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <application android:allowBackup="true" android:label="s" android:name="android.app.Application" android:icon="@drawable/icon">
+    <activity android:icon="@drawable/icon" android:label="SendSMS" android:name="md5546cc39092ed35f21a1d846b70b83e14.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <receiver android:exported="true" android:permission="android.permission.SEND_SMS" android:name="md5546cc39092ed35f21a1d846b70b83e14.SMSDeliveredReceiver" />
+    <receiver android:exported="true" android:permission="android.permission.SEND_SMS" android:name="md5546cc39092ed35f21a1d846b70b83e14.SMSSentReceiver" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="SendSMS.SendSMS.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>
